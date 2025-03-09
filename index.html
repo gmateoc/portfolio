@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillermo Teobaldo Mateo Carbajal</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="public/js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="nav-main">
+        <h1>
+            Guillermo Teobaldo Mateo Carbajal
+        </h1>
+        <div class="nav-rigth">
+            <p>Contáctame</p>
+            <a href="https://www.linkedin.com/in/guillermo-teobaldo-mateo-carbajal-6863b1a2/" title="LinkedIn" target="_blank">
+                <img src="public/img/icons/linkedin.svg">
+            </a>
+            <a href="https://gitlab.com/projectsown1" title="GitLab" target="_blank">
+                <img src="public/img/icons/gitlab.svg">
+            </a>
+        </div>
+    </nav>
+
+    <section class="section-main">
+        <div class="section-main-one">
+            <h1>Hola, Soy un Desarrollador Full Stack</h1>
+            <p>+1 año de experiencia en diferentes tecnologías del lado Frontend, Backend, Web, Móvil, Ingeniería de Datos y Visualizadores de Datos.</p>
+        </div>
+        <img src="public/img/logo/dev.png">
+    </section>
+
+    <section class="section-profile">
+        <div class="section-title">Perfil:</div>
+        <p>| Developer | Desarrollador de Software | Ingeniero de Sistemas | Ingeniería de Datos | Data Engineer | Java | SpringBoot | Azure | AWS | GCP | Laravel | ReactJS | PHP | JavaScript</p>
+    </section>
+
+    <section class="section-projects">
+        <div class="section-title">Proyectos:</div>
+        <div class="group-projects">
+            <div class="card-project">
+                <div class="card-project-main">
+                    <h2>PokeApi</h2>
+                    <p>Proyecto realizado con SpringBoot y ReactJS, en el que se realiza el consumo de la Api PokeApi con SpringBoot y estos datos son pasados a ReactJs en donde se realiza el paginado y se muestran los datos de cada pokemón con su línea evolutiva.</p>
+                    <a href="https://gitlab.com/projectsown1/poke-api-complete" target="_blank">Ver el código en Gitlab</a>
+                </div>
+                <video src="public/videos/pokeApi.mp4" controls type="video/mp4"></video>
+            </div>
+            <div class="card-project">
+                <div class="card-project-main">
+                    <h2>Devstagram</h2>
+                    <p>Proyecto realizado con Laravel, en este proeycto se realizó algo parecido a Instagram en el cual puedes crear un post, tienes opción a comentar y dar like o dislike, también se puede seguir a otros usuarios.</p>
+                    <a href="https://gitlab.com/projectsown1/devstagram" target="_blank">Ver el código en Gitlab</a>
+                </div>
+                <video src="public/videos/devstagram.mp4" controls type="video/mp4"></video>
+            </div>
+            <div class="card-project">
+                <div class="card-project-main">
+                    <h2>Rick and Morty</h2>
+                    <p>Proyecto realizado con Angular, en este proyecto se consumen algunos de los datos de personajes de la serie y a través de un diseño se puede ver tarjetas superpuestas y las cuales permiten interactuar y cambiar entre ellas añadiendo una música por cada clic.</p>
+                    <a href="https://gitlab.com/projectsown1/rick-and-morty-angular" target="_blank">Ver el código en Gitlab</a>
+                </div>
+                <video src="public/videos/rick.mp4" controls type="video/mp4"></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact">
+        <div class="section-title">Contáctame:</div>
+        <form id="contact-form">
+            <p>NOMBRES Y APELLIDOS/EMPRESA:</p>
+            <input type="text" name="name" id="" placeholder="Colocar tus nombres, apellidos o nombre de la Empresa.">
+            <p>CORREO ELECTRÓNICO:</p>
+            <input type="email" name="email" id="" placeholder="Colocar tu correo electrónico.">
+            <p>MENSAJE</p>
+            <textarea name="message" id="" placeholder="Descripción del motivo del envío."></textarea>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+
+    <dialog id="status-dialog">
+        <p id="status-message"></p>
+        <button id="close-dialog">Cerrar</button>
+    </dialog>
+
+    <footer>
+        Mi Portafolio - Todos los derechos reservados © <span id="year"></span>
+    </footer>
+
+    <script src="public/js/app.js"></script>
+</body>
+</html>

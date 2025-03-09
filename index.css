@@ -1,0 +1,215 @@
+
+
+body{
+    padding: 0 15vw;
+    font-family: Montserrat, sans-serif;
+}
+
+/********************************************** Navegación **************************************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vw;
+    background: white;
+    padding: 0 15vw;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.nav-main h1{
+    font-size: 1.2vw;
+}
+.nav-rigth {
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+    gap: 1vw;
+}
+.nav-rigth p{
+    cursor: pointer;
+}
+.nav-rigth p:hover{
+    border-bottom: 1px solid #000;
+}
+.nav-rigth img {
+    width: 2vw;
+    height: auto;
+}
+
+
+/********************************************** Sección uno **************************************************/
+
+.section-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6vw;
+}
+.section-main img{
+    height: 26.04vw;
+    width: 26.04vw;
+}
+.section-main-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-main-one h1{
+    font-size: 5vw;
+}
+.section-main-one p{
+    font-size: 1.5vw;
+}
+
+
+/********************************************** Sección dos **************************************************/
+
+.section-profile{
+    display: flex;
+    flex-direction: column;
+}
+.section-title{
+    background-color: #9dd6f4;
+    font-size: 1.3vw;
+    font-weight: 600;
+    height: 4vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.section-profile p{
+    margin: 2vw 0;
+    font-size: 1vw;
+    text-align: center;
+}
+
+
+/********************************************** Sección tres **************************************************/
+
+.card-project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2vw;
+    box-sizing: border-box;
+}
+.card-project-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.card-project-main h2{
+    font-size: 1.8vw;
+}
+.card-project-main p{
+    font-size: 1vw;
+}
+.card-project-main a{
+    padding: 1.5vw 2vw;
+    background-color: #9dd6f4;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+    color: #000;
+    font-weight: 600;
+    align-self: center;
+    font-size: 1vw;
+}
+.card-project video{
+    height: auto;
+    width: 36vw;
+    border-radius: 10px;
+}
+
+
+/********************************************** Sección cuatro **************************************************/
+
+.section-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+.section-contact p{
+    font-family: Montserrat, sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.section-contact input{
+    font-family: Montserrat, sans-serif;
+    font-size: 1vw;
+    height: 2vw;
+    width: 30vw;
+    padding-left: 10px;
+}
+.section-contact input::placeholder{
+    font-family: Montserrat, sans-serif;
+    padding-left: 10px;
+}
+.section-contact textarea{
+    padding: 10px 0 0 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1vw;
+    height: 6vw;
+    width: 30vw;
+}
+.section-contact textarea::placeholder{
+    font-family: Montserrat, sans-serif;
+    padding-left: 10px;
+}
+.section-contact button{
+    height: 2vw;
+    width: 30vw;
+    background-color: #9dd6f4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+#status-dialog{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    height: 150px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+}
+#status-dialog button{
+    margin-top: 20px;
+    height: 2vw;
+    width: 10vw;
+    background-color: #9dd6f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
