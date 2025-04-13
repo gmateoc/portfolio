@@ -2,7 +2,15 @@
 
 body{
     padding: 0 15vw;
+    background-color: #000;
     font-family: Montserrat, sans-serif;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px){
+    body{
+        padding: 0 50px;
+    }
 }
 
 /********************************************** Navegación **************************************************/
@@ -20,7 +28,7 @@ body{
     left: 0;
     width: 100%;
     height: 4vw;
-    background: white;
+    background: #1f2937;
     padding: 0 15vw;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
@@ -43,6 +51,25 @@ body{
 .nav-rigth img {
     width: 2vw;
     height: auto;
+}
+
+@media only screen and (max-width: 767px){
+    .nav-main {
+        justify-content: center;
+        flex-direction: column;
+        height: 100px;
+        gap: 10px;
+    }
+    .nav-main h1{
+        font-size: 20px;
+    }
+    .nav-rigth {
+        font-size: 20px;
+    }
+    .nav-rigth img {
+        width: 40px;
+        height: auto;
+    }
 }
 
 
@@ -72,6 +99,26 @@ body{
     font-size: 1.5vw;
 }
 
+@media only screen and (max-width: 767px){
+    .section-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 110px;
+        gap: 10px;
+    }
+    .section-main img{
+        height: 200px;
+        width: 200px;
+    }
+    .section-main-one h1{
+        font-size: 30px;
+    }
+    .section-main-one p{
+        font-size: 20px;
+    }
+}
+
 
 /********************************************** Sección dos **************************************************/
 
@@ -80,7 +127,7 @@ body{
     flex-direction: column;
 }
 .section-title{
-    background-color: #9dd6f4;
+    background-color: #1f2937;
     font-size: 1.3vw;
     font-weight: 600;
     height: 4vw;
@@ -95,6 +142,15 @@ body{
     text-align: center;
 }
 
+@media only screen and (max-width: 767px){
+    .section-title{
+        font-size: 20px;
+        height: 40px;
+    }
+    .section-profile p{
+        font-size: 18px;
+    }
+}
 
 /********************************************** Sección tres **************************************************/
 
@@ -110,6 +166,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    flex: 1;
 }
 .card-project-main h2{
     font-size: 1.8vw;
@@ -119,19 +176,62 @@ body{
 }
 .card-project-main a{
     padding: 1.5vw 2vw;
-    background-color: #9dd6f4;
+    background-color: #1f2937;
     text-decoration: none;
     border-radius: 5px;
     width: fit-content;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     align-self: center;
     font-size: 1vw;
 }
-.card-project video{
-    height: auto;
+.card-project iframe {
+    height: 20vw;
     width: 36vw;
+    flex: 1;
     border-radius: 10px;
+}
+.skill-group{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.26vw 0.52vw;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    border: 1px solid #1f2937;
+    background-color: #1f2937;
+}
+
+@media only screen and (max-width: 767px){
+    .card-project{
+        flex-direction: column;
+        margin: 30px 0;
+        gap: 20px;
+    }
+    .card-project-main h2{
+        font-size: 20px;
+    }
+    .card-project-main p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .card-project-main a{
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+    .card-project iframe {
+        height: 250px;
+        width: 350px;
+    }
+    .skill{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
 }
 
 
@@ -142,7 +242,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 0 120px 0;
     gap: 20px;
 }
 .section-contact p{
@@ -153,9 +253,11 @@ body{
 .section-contact input{
     font-family: Montserrat, sans-serif;
     font-size: 1vw;
-    height: 2vw;
+    height: 50px;
     width: 30vw;
     padding-left: 10px;
+    border-radius: 3px;
+    border: none;
 }
 .section-contact input::placeholder{
     font-family: Montserrat, sans-serif;
@@ -183,11 +285,51 @@ body{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 767px){
+    .section-contact p{
+        font-size: 18px;
+    }
+    .section-contact input{
+        font-size: 13px;
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .section-contact textarea{
+        font-size: 13px;
+        height: 100px;
+        width: 100%;
+    }
+    .section-contact button{
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+
+/********************************************** Footer **************************************************/
 
 footer{
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
+    font-size: 1.2vw;
+    background-color: #1f2937;
+    color: #fff;
+    position: fixed;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 767px){
+    footer{
+        font-size: 15px;
+    }
 }
 
 #status-dialog{

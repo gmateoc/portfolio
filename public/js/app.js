@@ -42,3 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
         dialog.style.display = "none";
     });
 });
+
+document.getElementById('contact_go').onclick = function (){
+    document.querySelector('.section-contact').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
